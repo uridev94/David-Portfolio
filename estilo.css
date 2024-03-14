@@ -12,22 +12,27 @@ html{
     /*permite deslizar cuando hacemos click en los links del menu*/
     scroll-behavior: smooth;
 }
+
+main{
+    overflow: hidden;
+}
 /*MENU*/
 .contenedor-header{
     background: #232525;
-    position: fixed;
+    position:sticky;
     width: 100%;
     top: 0;
-    left: 0;
-    z-index: 99;
+    /* left: 0; */
+    z-index: 100;
 }
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
+    /* height: 60px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 .contenedor-header header .logo a{
     font-family: 'Monserrat' sans-serif;
@@ -66,42 +71,42 @@ html{
     display: none;
 }
 /* SECCION I N I C I O */
+
 .inicio{
     background: linear-gradient(to top, rgba(48, 61, 69, 0.685), rgb(30, 35, 38)),
     url(/Assets/img/fondo1280.jpg);
+    /* width: 100%; */
     background-size:cover;
     height: 100vh;
     color: #fff;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-}
-
-.inicio .contenido-banner{
-    padding: 24px;
-    background-color: #282929;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 100px;
-    
-    /* align-items: center;
-    justify-content: center; */
-}
-
-.inicio .contenido-banner img{
-    margin-top: 45px;
-    border: 4px solid #1cb696;
-    display: flex;
-    width: 60%;
-    margin: auto;
-    border-radius: 50%;
-    justify-content: center;
     align-items: center;
 }
 
+.inicio .contenido-banner{
+    padding: 40px ;
+    background-color: #232525;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+ }
+
+.inicio .contenido-banner img{
+    
+    margin-top: 40px;
+    border: 10px solid #1cb696;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    /* justify-content: center;
+    align-items: center; */
+    /* position: relative; */
+}
+
 .inicio .contenido-banner h1{
-    margin-top: 10px;
+    margin-top: 40px;
     font-size: 40px;
     font-family: "Monserrat" sans-serif;
     margin-bottom: 24px;
@@ -110,8 +115,7 @@ html{
 .inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
-    color: #69fbdea1;
-   
+    color: #69fbdea1; 
 }
 
 .inicio .contenido-banner .redes a{
@@ -126,7 +130,7 @@ html{
     width: 36px;
     height: 36px;
     line-height: 34px;
-    margin: 32px 5px;
+    margin: 28px 5px;
     font-size: 21px;
     transition: .3s;
 }
@@ -136,10 +140,12 @@ html{
     background-color: #119c8080
 }
 
+/*seccion sobre mi*/
+
 .sobremi{
     background-color: #232525;
     color: #fff;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .sobremi .contenido-seccion{
@@ -151,7 +157,7 @@ html{
     font-size: 40px;
     font-family: "Monserrat" sans-serif;
     text-align: center;
-    padding: 18px 0;
+    padding: 40px 0;
 } 
 
 .sobremi .contenido-seccion p{
@@ -501,7 +507,7 @@ html{
     font-family: "Monserrat" sans-serif;
     text-align: center;
     justify-content: center;
-    padding: 18px 0;
+    padding: 50px 0;
 } 
 
 .curriculum .fila{
