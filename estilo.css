@@ -794,6 +794,10 @@ bottom: 4px;
     margin-right: 20px
 }
 
+.contacto .map{
+    width: 90%;
+}
+
 /* FOOTER */
 
 footer{
@@ -878,6 +882,10 @@ footer .arriba{
     }
     .sobremi .fila .col{
         width: fit-content;
+    }
+
+    .sobremi .fila .columna .contenedor-intereses{
+        display: block;
     }
 
     .skills .fila{
