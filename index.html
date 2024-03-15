@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 
+
+
 <body>
     <!-- MENU ENCABEZADO-->
     <div class="contenedor-header">
@@ -25,15 +27,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">HABILIDADES</a></li>
-                    <li><a href="#curriculum">HERRAMIENTAS</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -281,7 +283,7 @@
         <!--SECCION CURRICULUM-->
         <section id="curriculum" class="curriculum">
             <div class="contenido-seccion">
-                <h2>Currículum</h2>
+                <h2>Curriculum</h2>
                 <div class="fila">
                     <div class="col izquierda">
                         <h3>Educación</h3>
@@ -430,7 +432,25 @@
                 </div>
             </div>
         </section>
+    <!--FOOTER-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-circle-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="comments">
+                <p>2024</p>
+            </div>
+        </footer>        
     </main>
+    <script>
+        src="script.js"
+    </script>
 </body>
 
 </html>
