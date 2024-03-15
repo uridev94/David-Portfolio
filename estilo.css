@@ -870,14 +870,19 @@ footer .arriba{
 
 @media screen and (max-width:700px){
     .sobremi .fila{
-        display: block;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
     }
     .sobremi .fila .col{
         width: fit-content;
     }
 
     .skills .fila{
-        display:block;
+        display:flex;
+        flex-direction: column;
     }
     .skills .fila .col{
         width: 100%;
@@ -887,13 +892,16 @@ footer .arriba{
     }
 
     .curriculum .fila{
-        display:block
+        display:flex;
+        flex-flow: column;
+        width: 90%;
     }
     .curriculum .fila .col{
         width: 90%;
+        text-align: center;
     }
     .curriculum .fila .derecha{
-        margin-left: 20px
+        margin-left: 10px
     }
 
     .portafolio .galeria{
@@ -914,6 +922,12 @@ footer .arriba{
 
     .contacto .fila .columna{
         width: 100%;
+    }
+
+    .contacto .map{
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
     }
     
 }

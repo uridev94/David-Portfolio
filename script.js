@@ -24,7 +24,7 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills>=300){
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[1].classList.add("javascript");
+        habilidades[1].classList.add("Javascript");
     }
 }
 //Método para detectar el scrolling cuando pase por la sección de habilidades
