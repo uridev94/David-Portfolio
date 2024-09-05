@@ -29,7 +29,7 @@ function darkMode () {
         darkBody.classList.toggle('dark')
        
         const moonIcon = document.querySelector('.bx-moon')
-        const sunIcon = document.querySelector('.bx-sun')
+        const sunIcon = document.querySelector('.bxs-sun')
         if (moonIcon.classList.contains('icon__hidden')) {
             moonIcon.classList.remove('icon__hidden')
             sunIcon.classList.add('icon__hidden')
@@ -42,7 +42,19 @@ function darkMode () {
     }
 
 
-    console.log(darkMode())
+function idioma () {
+    const englishButton = document.querySelector('.en')
+    const spanishButton = document.querySelector('.es')
+
+    spanishButton.addEventListener('click', function(){
+        
+        if (location.href = '/index.html') {
+            console.log('Estoy en español')
+        } else {
+            console.log('Estoy en ingles')
+        }
+    })
+}
 
 
 
